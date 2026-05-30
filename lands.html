@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse verified land and plot listings across Uttar Pradesh on BuildMate." />
+  <title>Land Listings — BuildMate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<script src="script.js"></script>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🏠</div>
+      <span class="nav-logo-text">Build<span>Mate</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lands.html" class="active">Land Listings</a></li>
+      <li><a href="services.html">Professionals</a></li>
+      <li><a href="suppliers.html">Suppliers</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-gold btn-sm">Get Started</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="lands.html">Land Listings</a>
+  <a href="services.html">Professionals</a>
+  <a href="suppliers.html">Suppliers</a>
+  <a href="designs.html">Designs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> › <span>Land Listings</span>
+    </div>
+    <div class="badge" style="background:rgba(212,175,55,0.2);color:var(--accent);">1,200+ Verified Plots</div>
+    <h1 class="page-hero-title">Find Your Perfect Plot</h1>
+    <p class="page-hero-sub">Explore verified land listings with transparent pricing, dimensions, and direct seller contacts.</p>
+  </div>
+</section>
+
+<!-- ========== LISTINGS ========== -->
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Filters -->
+    <div class="filter-bar reveal">
+      <div class="filter-group">
+        <label>Location</label>
+        <select>
+          <option value="">All Locations</option>
+          <option>Lucknow</option>
+          <option>Kanpur</option>
+          <option>Agra</option>
+          <option>Noida</option>
+          <option>Varanasi</option>
+          <option>Prayagraj</option>
+          <option>Meerut</option>
+          <option>Bareilly</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Plot Type</label>
+        <select>
+          <option value="">All Types</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Agricultural</option>
+          <option>Industrial</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Min Price</label>
+        <input type="number" placeholder="e.g. 2000000" />
+      </div>
+      <div class="filter-group">
+        <label>Max Price</label>
+        <input type="number" placeholder="e.g. 10000000" />
+      </div>
+      <div class="filter-group">
+        <label>Min Size (sq yd)</label>
+        <input type="number" placeholder="e.g. 100" />
+      </div>
+      <div>
+        <button class="btn btn-gold filter-apply">Apply Filters</button>
+      </div>
+    </div>
+
+    <!-- Results Count -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;" class="reveal">
+      <p style="color:var(--muted);font-size:0.9rem;">Showing <strong style="color:var(--text)">12 listings</strong> across all locations</p>
+      <select style="padding:10px 16px;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font-body);font-size:0.85rem;color:var(--text);background:var(--card);outline:none;">
+        <option>Sort: Newest</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Size: Largest</option>
+      </select>
+    </div>
+
+    <!-- Listings Grid -->
+    <div class="listings-grid">
+
+      <!-- Listing 1 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80&auto=format&fit=crop" alt="Plot Lucknow" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Gomti Nagar, Lucknow</div>
+          <div class="plot-title">Prime Corner Plot — Sector 12</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>200 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>40×50 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 45,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 98765 43210</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 2 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&q=80&auto=format&fit=crop" alt="Plot Kanpur" loading="lazy" />
+          <span class="plot-tag">Commercial</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Civil Lines, Kanpur</div>
+          <div class="plot-title">Commercial Plot — Main Road Front</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>500 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>60×80 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 1,20,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 87654 32109</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 3 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&q=80&auto=format&fit=crop" alt="Plot Agra" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Fatehabad Road, Agra</div>
+          <div class="plot-title">Luxury Villa Plot — Gated Colony</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>400 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>50×72 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>West Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 85,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 76543 21098</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 4 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80&auto=format&fit=crop" alt="Plot Varanasi" loading="lazy" />
+          <span class="plot-tag">Agricultural</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Sarnath, Varanasi</div>
+          <div class="plot-title">Farmhouse Plot — NH56 Belt</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>1 Bigha</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>100×100 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>South Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 32,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 65432 10987</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 5 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80&auto=format&fit=crop" alt="Plot Noida" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Sector 137, Noida</div>
+          <div class="plot-title">Premium Sector Plot — Expressway</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>300 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>45×60 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 95,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 54321 09876</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 6 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Plot Prayagraj" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Civil Lines, Prayagraj</div>
+          <div class="plot-title">Corner Plot — Heritage Zone</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>250 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>45×50 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 58,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 43210 98765</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 7 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=600&q=80&auto=format&fit=crop" alt="Plot Meerut" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Shastri Nagar, Meerut</div>
+          <div class="plot-title">Family Plot — Quiet Locality</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>150 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>30×45 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>West Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 28,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 32109 87654</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 8 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop" alt="Plot Bareilly" loading="lazy" />
+          <span class="plot-tag">Commercial</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Pilibhit Bypass, Bareilly</div>
+          <div class="plot-title">Highway Commercial Plot</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>800 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>80×90 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>South Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 1,80,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 21098 76543</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 9 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&q=80&auto=format&fit=crop" alt="Plot Lucknow 2" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Indira Nagar, Lucknow</div>
+          <div class="plot-title">Duplex Ready Plot — Wide Road</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>180 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>36×45 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 42,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 10987 65432</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 10 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1560749003-f4b1e17e2dfd?w=600&q=80&auto=format&fit=crop" alt="Plot Ghaziabad" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Raj Nagar Ext., Ghaziabad</div>
+          <div class="plot-title">Affordable Plot — New Township</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>120 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>24×45 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 22,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 09876 54321</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 11 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80&auto=format&fit=crop" alt="Plot Mathura" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Vrindavan Road, Mathura</div>
+          <div class="plot-title">Pilgrimage Zone Residential Plot</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>220 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>44×45 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 38,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 98765 11223</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 12 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80&auto=format&fit=crop" alt="Plot Aligarh" loading="lazy" />
+          <span class="plot-tag">Industrial</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 UPSIDC Zone, Aligarh</div>
+          <div class="plot-title">Industrial Plot — Logistics Hub</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>2000 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>120×150 ft</strong>Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 3,20,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 87654 99001</div>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact Seller</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;">
+          <div class="nav-logo-icon">🏠</div>
+          <span class="nav-logo-text">Build<span>Mate</span></span>
+        </a>
+        <p>India's most trusted all-in-one platform for home builders.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="lands.html">Land Listings</a></li><li><a href="services.html">Professionals</a></li><li><a href="designs.html">Designs</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Contractors</a></li><li><a href="services.html">Electricians</a></li><li><a href="services.html">Plumbers</a></li><li><a href="suppliers.html">Suppliers</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Lucknow, UP 226010</a></li><li><a href="mailto:hello@buildmate.in">hello@buildmate.in</a></li><li><a href="tel:+919876543210">+91 98765 43210</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>BuildMate</span>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

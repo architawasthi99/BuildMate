@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find trusted contractors, mistris, electricians, plumbers, painters and carpenters on BuildMate." />
+  <title>Service Professionals — BuildMate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<script src="script.js"></script>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🏠</div><span class="nav-logo-text">Build<span>Mate</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lands.html">Land Listings</a></li>
+      <li><a href="services.html" class="active">Professionals</a></li>
+      <li><a href="suppliers.html">Suppliers</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-gold btn-sm">Get Started</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="lands.html">Land Listings</a><a href="services.html">Professionals</a><a href="suppliers.html">Suppliers</a><a href="designs.html">Designs</a><a href="contact.html">Contact</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Service Professionals</span></div>
+    <div class="badge" style="background:rgba(212,175,55,0.2);color:var(--accent);">850+ Verified Professionals</div>
+    <h1 class="page-hero-title">Find Trusted Professionals</h1>
+    <p class="page-hero-sub">Hire skilled, rated, and verified workers for every stage of your home construction.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Search -->
+    <div class="filter-bar reveal" style="margin-bottom:60px;">
+      <div class="filter-group">
+        <label>Search by Name</label>
+        <input type="text" placeholder="Search professional name..." />
+      </div>
+      <div class="filter-group">
+        <label>Category</label>
+        <select>
+          <option>All Categories</option>
+          <option>Contractor</option>
+          <option>Mistri</option>
+          <option>Electrician</option>
+          <option>Plumber</option>
+          <option>Painter</option>
+          <option>Carpenter</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>City</label>
+        <select>
+          <option>All Cities</option>
+          <option>Lucknow</option>
+          <option>Kanpur</option>
+          <option>Agra</option>
+          <option>Noida</option>
+          <option>Varanasi</option>
+        </select>
+      </div>
+      <div>
+        <button class="btn btn-gold filter-apply">Search</button>
+      </div>
+    </div>
+
+    <!-- CONTRACTORS -->
+    <div style="margin-bottom:64px;">
+      <div class="category-header reveal">
+        <div class="category-icon">👷</div>
+        <div>
+          <div class="category-title">Contractors</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Full construction management professionals</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80&auto=format&fit=crop&face" alt="Mohammad Aziz" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Mohammad Aziz</div>
+          <div class="profile-role">Senior Contractor</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 18 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80&auto=format&fit=crop&face" alt="Suresh Yadav" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Suresh Yadav</div>
+          <div class="profile-role">Building Contractor</div>
+          <div class="profile-rating">★★★★☆ 4.7</div>
+          <div class="profile-city">📍 Kanpur</div>
+          <div class="profile-exp">🕐 12 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80&auto=format&fit=crop&face" alt="Ramesh Gupta" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Ramesh Gupta</div>
+          <div class="profile-role">Civil Contractor</div>
+          <div class="profile-rating">★★★★★ 4.8</div>
+          <div class="profile-city">📍 Agra</div>
+          <div class="profile-exp">🕐 22 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80&auto=format&fit=crop&face" alt="Anil Srivastava" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Anil Srivastava</div>
+          <div class="profile-role">Project Contractor</div>
+          <div class="profile-rating">★★★★☆ 4.6</div>
+          <div class="profile-city">📍 Noida</div>
+          <div class="profile-exp">🕐 15 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISTRIS -->
+    <div style="margin-bottom:64px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🧱</div>
+        <div>
+          <div class="category-title">Mistris (Masons)</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Expert bricklayers and masonry workers</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200&q=80&auto=format&fit=crop&face" alt="Raju Mistri" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Raju Mistri</div>
+          <div class="profile-role">Head Mistri</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 20 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80&auto=format&fit=crop&face" alt="Kallu Mistri" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Kallu Mistri</div>
+          <div class="profile-role">Senior Mason</div>
+          <div class="profile-rating">★★★★☆ 4.5</div>
+          <div class="profile-city">📍 Varanasi</div>
+          <div class="profile-exp">🕐 14 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=200&q=80&auto=format&fit=crop&face" alt="Bholay Mistri" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Bholay Mistri</div>
+          <div class="profile-role">Expert Mason</div>
+          <div class="profile-rating">★★★★★ 4.8</div>
+          <div class="profile-city">📍 Prayagraj</div>
+          <div class="profile-exp">🕐 25 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200&q=80&auto=format&fit=crop&face" alt="Shyam Mistri" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Shyam Mistri</div>
+          <div class="profile-role">Plaster Specialist</div>
+          <div class="profile-rating">★★★★☆ 4.7</div>
+          <div class="profile-city">📍 Agra</div>
+          <div class="profile-exp">🕐 10 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELECTRICIANS -->
+    <div style="margin-bottom:64px;">
+      <div class="category-header reveal">
+        <div class="category-icon">⚡</div>
+        <div>
+          <div class="category-title">Electricians</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Certified electrical installation experts</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1563212034-a3c52118cce2?w=200&q=80&auto=format&fit=crop&face" alt="Deepak Verma" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Deepak Verma</div>
+          <div class="profile-role">Master Electrician</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 16 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&q=80&auto=format&fit=crop&face" alt="Santosh Electrician" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Santosh Kumar</div>
+          <div class="profile-role">Electrical Contractor</div>
+          <div class="profile-rating">★★★★☆ 4.6</div>
+          <div class="profile-city">📍 Kanpur</div>
+          <div class="profile-exp">🕐 11 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&q=80&auto=format&fit=crop&face" alt="Vijay Electric" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Vijay Prasad</div>
+          <div class="profile-role">Wiring Specialist</div>
+          <div class="profile-rating">★★★★★ 4.8</div>
+          <div class="profile-city">📍 Noida</div>
+          <div class="profile-exp">🕐 8 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1596075780750-81249df16d19?w=200&q=80&auto=format&fit=crop&face" alt="Govind Electric" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Govind Sharma</div>
+          <div class="profile-role">Home Electrician</div>
+          <div class="profile-rating">★★★★☆ 4.5</div>
+          <div class="profile-city">📍 Varanasi</div>
+          <div class="profile-exp">🕐 13 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLUMBERS -->
+    <div style="margin-bottom:64px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🔧</div>
+        <div>
+          <div class="category-title">Plumbers</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Expert plumbing and pipe fitting professionals</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1542909168-82c3e7fdba67?w=200&q=80&auto=format&fit=crop&face" alt="Manoj Plumber" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Manoj Tiwari</div>
+          <div class="profile-role">Master Plumber</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 19 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80&auto=format&fit=crop&face" alt="Ravi Plumber" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Ravi Singh</div>
+          <div class="profile-role">Sanitary Expert</div>
+          <div class="profile-rating">★★★★☆ 4.6</div>
+          <div class="profile-city">📍 Agra</div>
+          <div class="profile-exp">🕐 9 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1578345272588-2d62bbbf5519?w=200&q=80&auto=format&fit=crop&face" alt="Dinesh Plumber" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Dinesh Mishra</div>
+          <div class="profile-role">Pipeline Specialist</div>
+          <div class="profile-rating">★★★★★ 4.7</div>
+          <div class="profile-city">📍 Kanpur</div>
+          <div class="profile-exp">🕐 14 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=200&q=80&auto=format&fit=crop&face" alt="Naresh Plumber" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Naresh Pal</div>
+          <div class="profile-role">Drainage Expert</div>
+          <div class="profile-rating">★★★★☆ 4.4</div>
+          <div class="profile-city">📍 Prayagraj</div>
+          <div class="profile-exp">🕐 7 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAINTERS -->
+    <div style="margin-bottom:64px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🎨</div>
+        <div>
+          <div class="category-title">Painters</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Interior and exterior painting specialists</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?w=200&q=80&auto=format&fit=crop&face" alt="Ashok Painter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Ashok Kumar</div>
+          <div class="profile-role">Interior Painter</div>
+          <div class="profile-rating">★★★★★ 4.8</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 17 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1563237023-b1e970526dcb?w=200&q=80&auto=format&fit=crop&face" alt="Umesh Painter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Umesh Rawat</div>
+          <div class="profile-role">Texture Specialist</div>
+          <div class="profile-rating">★★★★☆ 4.5</div>
+          <div class="profile-city">📍 Noida</div>
+          <div class="profile-exp">🕐 10 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&q=80&auto=format&fit=crop&face" alt="Hariom Painter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Hariom Prajapati</div>
+          <div class="profile-role">Exterior Painter</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Varanasi</div>
+          <div class="profile-exp">🕐 21 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?w=200&q=80&auto=format&fit=crop&face" alt="Kailash Painter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Kailash Chauhan</div>
+          <div class="profile-role">Wall Art Specialist</div>
+          <div class="profile-rating">★★★★☆ 4.6</div>
+          <div class="profile-city">📍 Meerut</div>
+          <div class="profile-exp">🕐 6 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARPENTERS -->
+    <div>
+      <div class="category-header reveal">
+        <div class="category-icon">🪵</div>
+        <div>
+          <div class="category-title">Carpenters</div>
+          <div style="font-size:0.82rem;color:var(--muted);">Custom furniture and woodwork craftsmen</div>
+        </div>
+      </div>
+      <div class="providers-grid">
+        <div class="profile-card reveal reveal-delay-1">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=200&q=80&auto=format&fit=crop&face" alt="Bablu Carpenter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Bablu Vishwakarma</div>
+          <div class="profile-role">Master Carpenter</div>
+          <div class="profile-rating">★★★★★ 4.9</div>
+          <div class="profile-city">📍 Lucknow</div>
+          <div class="profile-exp">🕐 23 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-2">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=200&q=80&auto=format&fit=crop&face" alt="Pradeep Carpenter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Pradeep Bhatt</div>
+          <div class="profile-role">Modular Carpenter</div>
+          <div class="profile-rating">★★★★☆ 4.7</div>
+          <div class="profile-city">📍 Agra</div>
+          <div class="profile-exp">🕐 12 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-3">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80&auto=format&fit=crop&face" alt="Meera Carpenter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Meera Devi</div>
+          <div class="profile-role">Furniture Maker</div>
+          <div class="profile-rating">★★★★★ 4.8</div>
+          <div class="profile-city">📍 Kanpur</div>
+          <div class="profile-exp">🕐 15 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+        <div class="profile-card reveal reveal-delay-4">
+          <div class="profile-avatar-wrap"><img class="profile-avatar" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=200&q=80&auto=format&fit=crop&face" alt="Sunita Carpenter" loading="lazy" /><span class="profile-verified">✓</span></div>
+          <div class="profile-name">Sunita Joshi</div>
+          <div class="profile-role">Interior Wood Specialist</div>
+          <div class="profile-rating">★★★★☆ 4.6</div>
+          <div class="profile-city">📍 Noida</div>
+          <div class="profile-exp">🕐 9 Years Experience</div>
+          <a href="contact.html" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;">Contact</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;"><div class="nav-logo-icon">🏠</div><span class="nav-logo-text">Build<span>Mate</span></span></a><p>India's most trusted home building platform.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="lands.html">Land Listings</a></li><li><a href="services.html">Professionals</a></li><li><a href="designs.html">Designs</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Contractors</a></li><li><a href="services.html">Electricians</a></li><li><a href="services.html">Plumbers</a></li><li><a href="suppliers.html">Suppliers</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Lucknow, UP</a></li><li><a href="mailto:hello@buildmate.in">hello@buildmate.in</a></li><li><a href="tel:+919876543210">+91 98765 43210</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 <span>BuildMate</span>. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

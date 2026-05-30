@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BuildMate — Your all-in-one platform to find plots, trusted professionals, suppliers, and inspiring home designs." />
+  <title>BuildMate — Build Your Dream Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<script src="script.js"></script>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🏠</div>
+      <span class="nav-logo-text">Build<span>Mate</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="lands.html">Land Listings</a></li>
+      <li><a href="services.html">Professionals</a></li>
+      <li><a href="suppliers.html">Suppliers</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-gold btn-sm">Get Started</a>
+    </div>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="lands.html">Land Listings</a>
+  <a href="services.html">Professionals</a>
+  <a href="suppliers.html">Suppliers</a>
+  <a href="designs.html">Designs</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-gold" style="margin-top:16px">Get Started</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">India's Premium Home Building Platform</div>
+      <h1 class="hero-title">
+        Build Your Dream Home,<br>
+        <span class="line2">All In One Place</span>
+      </h1>
+      <p class="hero-subtitle">Find plots, trusted professionals, quality suppliers, and inspiring home designs — everything you need, from a single platform.</p>
+      <div class="hero-search">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search plots, professionals, or locations..." />
+        <a href="lands.html" class="btn btn-gold">Search</a>
+      </div>
+      <div class="hero-cta">
+        <a href="lands.html" class="btn btn-outline">Browse Plots</a>
+        <a href="designs.html" class="btn btn-outline">Explore Designs</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="1200" data-suffix="+">1200+</div>
+          <div class="hero-stat-label">Verified Plots</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="850" data-suffix="+">850+</div>
+          <div class="hero-stat-label">Professionals</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="340" data-suffix="+">340+</div>
+          <div class="hero-stat-label">Suppliers</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="5000" data-suffix="+">5000+</div>
+          <div class="hero-stat-label">Happy Builders</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="badge">Our Services</div>
+      <h2 class="section-heading">Everything You Need to Build</h2>
+      <p class="section-sub">From land discovery to final finishes — BuildMate connects you with every resource for your dream home.</p>
+    </div>
+    <div class="services-grid">
+      <a href="lands.html" class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🏞️</div>
+        <div class="service-title">Plot Listings</div>
+        <div class="service-desc">Browse verified land listings with owner contact</div>
+      </a>
+      <a href="services.html" class="service-card reveal reveal-delay-2">
+        <div class="service-icon">👷</div>
+        <div class="service-title">Contractors</div>
+        <div class="service-desc">Hire experienced building contractors</div>
+      </a>
+      <a href="services.html" class="service-card reveal reveal-delay-3">
+        <div class="service-icon">⚡</div>
+        <div class="service-title">Electricians</div>
+        <div class="service-desc">Certified electrical professionals</div>
+      </a>
+      <a href="services.html" class="service-card reveal reveal-delay-4">
+        <div class="service-icon">🔧</div>
+        <div class="service-title">Plumbers</div>
+        <div class="service-desc">Expert plumbing services</div>
+      </a>
+      <a href="suppliers.html" class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🧱</div>
+        <div class="service-title">Material Suppliers</div>
+        <div class="service-desc">Cement, steel, tiles &amp; more</div>
+      </a>
+      <a href="designs.html" class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🏡</div>
+        <div class="service-title">House Designs</div>
+        <div class="service-desc">Modern, duplex &amp; villa blueprints</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURED PLOTS ========== -->
+<section class="section-pad" style="background:#F1F5F9;">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="badge">Featured Listings</div>
+      <h2 class="section-heading">Premium Plot Listings</h2>
+      <p class="section-sub">Handpicked plots in the most desirable locations — verified and ready for your dream project.</p>
+    </div>
+    <div class="plots-grid">
+
+      <!-- Card 1 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80&auto=format&fit=crop" alt="Plot in Lucknow" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Gomti Nagar, Lucknow</div>
+          <div class="plot-title">Prime Corner Plot — Sector 12</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>200 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>40×50 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 45,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 98765 43210</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&q=80&auto=format&fit=crop" alt="Plot in Kanpur" loading="lazy" />
+          <span class="plot-tag">Commercial</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Civil Lines, Kanpur</div>
+          <div class="plot-title">Commercial Plot — Main Road</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>500 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>60×80 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 1,20,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 87654 32109</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&q=80&auto=format&fit=crop" alt="Plot in Agra" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Fatehabad Road, Agra</div>
+          <div class="plot-title">Luxury Villa Plot — Gated Colony</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>400 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>50×72 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>West Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 85,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 76543 21098</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="plot-card reveal reveal-delay-1">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80&auto=format&fit=crop" alt="Plot in Varanasi" loading="lazy" />
+          <span class="plot-tag">Agricultural</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Sarnath, Varanasi</div>
+          <div class="plot-title">Farmhouse Plot — Highway Belt</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>1 Bigha</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>100×100 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>South Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 32,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 65432 10987</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="plot-card reveal reveal-delay-2">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80&auto=format&fit=crop" alt="Plot in Noida" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Sector 137, Noida</div>
+          <div class="plot-title">Premium Plot — Expressway Corridor</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>300 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>45×60 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>East Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 95,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 54321 09876</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="plot-card reveal reveal-delay-3">
+        <div class="plot-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Plot in Prayagraj" loading="lazy" />
+          <span class="plot-tag">Residential</span>
+        </div>
+        <div class="plot-body">
+          <div class="plot-location">📍 Civil Lines, Prayagraj</div>
+          <div class="plot-title">Corner Plot — Heritage Zone</div>
+          <div class="plot-meta">
+            <div class="plot-meta-item"><strong>250 sq yd</strong>Dimensions</div>
+            <div class="plot-meta-item"><strong>45×50 ft</strong>Plot Size</div>
+            <div class="plot-meta-item"><strong>North Facing</strong>Direction</div>
+          </div>
+          <div class="plot-price">₹ 58,00,000</div>
+          <div class="plot-footer">
+            <div class="plot-contact">📞 +91 43210 98765</div>
+            <a href="lands.html" class="btn btn-dark btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center" style="margin-top:48px;">
+      <a href="lands.html" class="btn btn-dark">View All Listings &nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY BUILDMATE ========== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="badge">Why BuildMate</div>
+      <h2 class="section-heading">Built for the Modern Home Builder</h2>
+      <p class="section-sub">We're not just a listing platform. We're your trusted partner throughout the entire home-building journey.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-num">01</div>
+        <div class="why-title">Verified Listings</div>
+        <div class="why-text">Every plot on BuildMate is manually verified. No fake listings, no false dimensions — just genuine land opportunities.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-num">02</div>
+        <div class="why-title">Trusted Professionals</div>
+        <div class="why-text">All contractors, mistris, plumbers, and electricians are background-checked and rated by real customers.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-num">03</div>
+        <div class="why-title">Premium Designs</div>
+        <div class="why-text">Browse an exclusive collection of modern, duplex, and villa designs curated by top architects.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-num">04</div>
+        <div class="why-title">Direct Contact</div>
+        <div class="why-text">Connect directly with sellers, suppliers, and professionals. No middlemen, no hidden commissions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="dark-section section-pad-sm">
+  <div class="container text-center reveal">
+    <div class="badge" style="background:rgba(212,175,55,0.2);color:var(--accent);">Start Your Journey</div>
+    <h2 class="section-heading" style="color:white;margin-bottom:16px;">Ready to Build Your Dream Home?</h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto 36px;font-size:1rem;">Join thousands of families who trusted BuildMate to make their home-building dream a reality.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="lands.html" class="btn btn-gold">Browse Plots</a>
+      <a href="services.html" class="btn btn-outline">Find Professionals</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="badge">Testimonials</div>
+      <h2 class="section-heading">What Our Customers Say</h2>
+      <p class="section-sub">Real stories from real families who built their dream homes with BuildMate.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="star-rating">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">BuildMate helped me find a verified plot in Gomti Nagar within a week. The seller's contact was genuine and the process was completely transparent. Absolutely loved the experience!</div>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&auto=format&fit=crop&face" alt="Rajesh Sharma" loading="lazy" />
+          <div>
+            <div class="author-name">Rajesh Sharma</div>
+            <div class="author-role">Home Builder, Lucknow</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="star-rating">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">I found my contractor, electrician, and plumber all through BuildMate. The rating system is incredibly reliable. My house was completed on time and within budget!</div>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&q=80&auto=format&fit=crop&face" alt="Priya Agarwal" loading="lazy" />
+          <div>
+            <div class="author-name">Priya Agarwal</div>
+            <div class="author-role">First-time Builder, Kanpur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="star-rating">★★★★★</div>
+        <div class="quote-mark">"</div>
+        <div class="testimonial-text">The house designs section is breathtaking. We chose a modern duplex design from BuildMate and our architect used it as a reference. The final result is stunning!</div>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&auto=format&fit=crop&face" alt="Vikram Singh" loading="lazy" />
+          <div>
+            <div class="author-name">Vikram Singh</div>
+            <div class="author-role">Architect Client, Noida</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;">
+          <div class="nav-logo-icon">🏠</div>
+          <span class="nav-logo-text">Build<span>Mate</span></span>
+        </a>
+        <p>India's most trusted all-in-one platform for home builders. Find plots, professionals, materials, and designs in one place.</p>
+        <div class="social-row" style="margin-top:24px;">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lands.html">Land Listings</a></li>
+          <li><a href="services.html">Professionals</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="designs.html">Designs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Contractors</a></li>
+          <li><a href="services.html">Electricians</a></li>
+          <li><a href="services.html">Plumbers</a></li>
+          <li><a href="services.html">Painters</a></li>
+          <li><a href="services.html">Carpenters</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Lucknow, UP 226010</a></li>
+          <li><a href="mailto:hello@buildmate.in">hello@buildmate.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>BuildMate</span>. All rights reserved. Made with ♥ in India.</p>
+      <p style="font-size:0.8rem;">Privacy Policy &nbsp;·&nbsp; Terms of Service</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

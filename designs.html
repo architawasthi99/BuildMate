@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore premium house designs — modern homes, duplexes, villas, exterior elevations and interior designs on BuildMate." />
+  <title>House Designs — BuildMate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Designs page specific overrides */
+    .design-grid-masonry {
+      columns: 3;
+      column-gap: 20px;
+    }
+    .design-grid-masonry .design-card {
+      break-inside: avoid;
+      margin-bottom: 20px;
+    }
+    .design-grid-masonry .design-card:nth-child(3n+2) .design-img { height: 340px; }
+    .design-grid-masonry .design-card:nth-child(3n) .design-img   { height: 250px; }
+    .design-grid-masonry .design-card .design-img                 { height: 290px; }
+    @media (max-width: 900px)  { .design-grid-masonry { columns: 2; } }
+    @media (max-width: 580px)  { .design-grid-masonry { columns: 1; } }
+    /* Always-visible design label beneath card */
+    .design-label { padding: 14px 16px; background: var(--card); }
+    .design-label-title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+    .design-label-cat { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🏠</div><span class="nav-logo-text">Build<span>Mate</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lands.html">Land Listings</a></li>
+      <li><a href="services.html">Professionals</a></li>
+      <li><a href="suppliers.html">Suppliers</a></li>
+      <li><a href="designs.html" class="active">Designs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-gold btn-sm">Get Started</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="lands.html">Land Listings</a><a href="services.html">Professionals</a><a href="suppliers.html">Suppliers</a><a href="designs.html">Designs</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>House Designs</span></div>
+    <div class="badge" style="background:rgba(212,175,55,0.2);color:var(--accent);">Architectural Design Gallery</div>
+    <h1 class="page-hero-title">Designs That Inspire</h1>
+    <p class="page-hero-sub">Browse our curated collection of modern homes, villas, duplexes, and interior designs to inspire your dream build.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Category Filter Tabs -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px;" class="reveal">
+      <button class="btn btn-gold btn-sm">All Designs</button>
+      <button class="btn btn-dark btn-sm">Modern Homes</button>
+      <button class="btn btn-dark btn-sm">Duplex</button>
+      <button class="btn btn-dark btn-sm">Villas</button>
+      <button class="btn btn-dark btn-sm">Exterior</button>
+      <button class="btn btn-dark btn-sm">Interior</button>
+    </div>
+
+    <!-- MODERN HOMES -->
+    <div style="margin-bottom:72px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🏠</div>
+        <div><div class="category-title">Modern Homes</div><div style="font-size:0.82rem;color:var(--muted);">Contemporary architecture for modern living</div></div>
+      </div>
+      <div class="design-grid">
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=85&auto=format&fit=crop" alt="Modern Home 1" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Skyline Residence</div><div class="design-cat">Modern · 3 BHK · 2400 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Skyline Residence</div><div class="design-label-cat">Modern · 3 BHK · 2400 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=85&auto=format&fit=crop" alt="Modern Home 2" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Prism House</div><div class="design-cat">Modern · 4 BHK · 3200 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Prism House</div><div class="design-label-cat">Modern · 4 BHK · 3200 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=85&auto=format&fit=crop" alt="Modern Home 3" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Casa Blanca</div><div class="design-cat">Modern · 2 BHK · 1800 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Casa Blanca</div><div class="design-label-cat">Modern · 2 BHK · 1800 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=85&auto=format&fit=crop" alt="Modern Home 4" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Elevated Box</div><div class="design-cat">Modern · 3 BHK · 2800 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Elevated Box</div><div class="design-label-cat">Modern · 3 BHK · 2800 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=85&auto=format&fit=crop" alt="Modern Home 5" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Slate & Stone</div><div class="design-cat">Modern · 5 BHK · 4200 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Slate & Stone</div><div class="design-label-cat">Modern · 5 BHK · 4200 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=85&auto=format&fit=crop" alt="Modern Home 6" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Glass & Steel Retreat</div><div class="design-cat">Modern · 4 BHK · 3600 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Glass & Steel Retreat</div><div class="design-label-cat">Modern · 4 BHK · 3600 sq ft</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DUPLEX HOMES -->
+    <div style="margin-bottom:72px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🏘️</div>
+        <div><div class="category-title">Duplex Homes</div><div style="font-size:0.82rem;color:var(--muted);">Smart two-floor designs for families</div></div>
+      </div>
+      <div class="design-grid">
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&q=85&auto=format&fit=crop" alt="Duplex 1" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Twin Gable Duplex</div><div class="design-cat">Duplex · 4+4 BHK · 3600 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Twin Gable Duplex</div><div class="design-label-cat">Duplex · 4+4 BHK · 3600 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=85&auto=format&fit=crop" alt="Duplex 2" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Urban Split Level</div><div class="design-cat">Duplex · 3+3 BHK · 2800 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Urban Split Level</div><div class="design-label-cat">Duplex · 3+3 BHK · 2800 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=85&auto=format&fit=crop" alt="Duplex 3" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Family Crown</div><div class="design-cat">Duplex · 5+5 BHK · 4400 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Family Crown</div><div class="design-label-cat">Duplex · 5+5 BHK · 4400 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=85&auto=format&fit=crop" alt="Duplex 4" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Terrace Duplex</div><div class="design-cat">Duplex · 4+4 BHK · 3200 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Terrace Duplex</div><div class="design-label-cat">Duplex · 4+4 BHK · 3200 sq ft</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VILLAS -->
+    <div style="margin-bottom:72px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🏰</div>
+        <div><div class="category-title">Villas</div><div style="font-size:0.82rem;color:var(--muted);">Luxury standalone villa designs</div></div>
+      </div>
+      <div class="design-grid">
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=85&auto=format&fit=crop" alt="Villa 1" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Royal Mansion</div><div class="design-cat">Villa · 6 BHK · 7200 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Royal Mansion</div><div class="design-label-cat">Villa · 6 BHK · 7200 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85&auto=format&fit=crop" alt="Villa 2" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Mediterranean Estate</div><div class="design-cat">Villa · 5 BHK · 5600 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Mediterranean Estate</div><div class="design-label-cat">Villa · 5 BHK · 5600 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1619994403073-2cec844b8e63?w=600&q=85&auto=format&fit=crop" alt="Villa 3" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">The Haveli Revival</div><div class="design-cat">Villa · 7 BHK · 8500 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">The Haveli Revival</div><div class="design-label-cat">Villa · 7 BHK · 8500 sq ft</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=85&auto=format&fit=crop" alt="Villa 4" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Pool Villa Retreat</div><div class="design-cat">Villa · 4 BHK + Pool · 4800 sq ft</div></div>
+          <div class="design-label"><div class="design-label-title">Pool Villa Retreat</div><div class="design-label-cat">Villa · 4 BHK + Pool · 4800 sq ft</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTERIOR ELEVATIONS -->
+    <div style="margin-bottom:72px;">
+      <div class="category-header reveal">
+        <div class="category-icon">🏛️</div>
+        <div><div class="category-title">Exterior Elevations</div><div style="font-size:0.82rem;color:var(--muted);">Facade designs and front elevation concepts</div></div>
+      </div>
+      <div class="design-grid">
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=85&auto=format&fit=crop" alt="Elevation 1" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Minimalist Facade</div><div class="design-cat">Elevation · Contemporary</div></div>
+          <div class="design-label"><div class="design-label-title">Minimalist Facade</div><div class="design-label-cat">Elevation · Contemporary</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=600&q=85&auto=format&fit=crop" alt="Elevation 2" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Brick & Wood Facade</div><div class="design-cat">Elevation · Industrial Chic</div></div>
+          <div class="design-label"><div class="design-label-title">Brick & Wood Facade</div><div class="design-label-cat">Elevation · Industrial Chic</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1522050212171-61b01dd24579?w=600&q=85&auto=format&fit=crop" alt="Elevation 3" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Classic White Elevation</div><div class="design-cat">Elevation · Traditional Modern</div></div>
+          <div class="design-label"><div class="design-label-title">Classic White Elevation</div><div class="design-label-cat">Elevation · Traditional Modern</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=600&q=85&auto=format&fit=crop" alt="Elevation 4" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Glass Curtain Wall</div><div class="design-cat">Elevation · Ultra Modern</div></div>
+          <div class="design-label"><div class="design-label-title">Glass Curtain Wall</div><div class="design-label-cat">Elevation · Ultra Modern</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERIOR DESIGNS -->
+    <div>
+      <div class="category-header reveal">
+        <div class="category-icon">🛋️</div>
+        <div><div class="category-title">Interior Designs</div><div style="font-size:0.82rem;color:var(--muted);">Inspiring interior concepts for every room</div></div>
+      </div>
+      <div class="design-grid">
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=85&auto=format&fit=crop" alt="Interior 1" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Scandinavian Living Room</div><div class="design-cat">Interior · Living Room</div></div>
+          <div class="design-label"><div class="design-label-title">Scandinavian Living Room</div><div class="design-label-cat">Interior · Living Room</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=85&auto=format&fit=crop" alt="Interior 2" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Modern Kitchen Design</div><div class="design-cat">Interior · Kitchen</div></div>
+          <div class="design-label"><div class="design-label-title">Modern Kitchen Design</div><div class="design-label-cat">Interior · Kitchen</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=85&auto=format&fit=crop" alt="Interior 3" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Master Bedroom Suite</div><div class="design-cat">Interior · Bedroom</div></div>
+          <div class="design-label"><div class="design-label-title">Master Bedroom Suite</div><div class="design-label-cat">Interior · Bedroom</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-1">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?w=600&q=85&auto=format&fit=crop" alt="Interior 4" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Luxury Bathroom</div><div class="design-cat">Interior · Bathroom</div></div>
+          <div class="design-label"><div class="design-label-title">Luxury Bathroom</div><div class="design-label-cat">Interior · Bathroom</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-2">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=85&auto=format&fit=crop" alt="Interior 5" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Statement Sofa Wall</div><div class="design-cat">Interior · Living Room</div></div>
+          <div class="design-label"><div class="design-label-title">Statement Sofa Wall</div><div class="design-label-cat">Interior · Living Room</div></div>
+        </div>
+        <div class="design-card reveal reveal-delay-3">
+          <div class="design-img"><img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=600&q=85&auto=format&fit=crop" alt="Interior 6" loading="lazy" /></div>
+          <div class="design-info"><div class="design-title">Pooja Room Design</div><div class="design-cat">Interior · Mandir / Pooja</div></div>
+          <div class="design-label"><div class="design-label-title">Pooja Room Design</div><div class="design-label-cat">Interior · Mandir / Pooja</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dark-section section-pad-sm">
+  <div class="container text-center reveal">
+    <div class="badge" style="background:rgba(212,175,55,0.2);color:var(--accent);">Get Inspired</div>
+    <h2 class="section-heading" style="color:white;">Love a Design? Let's Build It</h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:480px;margin:0 auto 32px;">Share any design you love with our network of architects and contractors to bring your vision to life.</p>
+    <a href="contact.html" class="btn btn-gold">Talk to an Expert</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;"><div class="nav-logo-icon">🏠</div><span class="nav-logo-text">Build<span>Mate</span></span></a><p>India's most trusted home building platform.</p></div>
+      <div class="footer-col"><h4>Designs</h4><ul><li><a href="designs.html">Modern Homes</a></li><li><a href="designs.html">Duplex</a></li><li><a href="designs.html">Villas</a></li><li><a href="designs.html">Interiors</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="lands.html">Land Listings</a></li><li><a href="services.html">Professionals</a></li><li><a href="suppliers.html">Suppliers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Lucknow, UP</a></li><li><a href="mailto:hello@buildmate.in">hello@buildmate.in</a></li><li><a href="tel:+919876543210">+91 98765 43210</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 <span>BuildMate</span>. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
